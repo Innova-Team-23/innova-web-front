@@ -1,8 +1,6 @@
 import React from 'react'
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import { AiOutlineInfoCircle, AiOutlineLock, AiOutlineFileText } from 'react-icons/ai';
-
-
 import '../../Assets/style/Footer.css';
 
 interface FooterProps {
