@@ -2,6 +2,18 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import '../../Assets/style/Home.css';
 
+const Home = () => {
+    return <h1>Accueil</h1>;
+  };
+  
+  const Apropos = () => {
+    return <h1>À propos</h1>;
+  };
+  
+  const Historique = () => {
+    return <h1>Historique</h1>;
+  };
+  
 
 const Home: React.FC = () => {
 
@@ -18,7 +30,7 @@ const Home: React.FC = () => {
     </section>
 
     <section className="about" id="about">
-        <h1 className="heading"><span>about</span>us</h1>
+        <h1 className="heading">about us</h1>
         <div className="row">
             <div className="video-container">
                 <h3>Best video</h3>
@@ -33,10 +45,10 @@ const Home: React.FC = () => {
     </section>
 
     <section className="card" id="card">
-    <h1 className="heading">Poster<span>Vos rêves</span></h1>
+    <h1 className="heading">Poster Vos rêves</h1>
     <div className="box-container">
         <div className="box">
-            <span className="discount">-10%</span>
+            <span className="discount">De quel rêve s'agit-il?</span>
             <div className="image">
                 
                 <div className="icons">
@@ -51,7 +63,7 @@ const Home: React.FC = () => {
         </div>
 
         <div className="box">
-            <span className="discount">-10%</span>
+            <span className="discount">De quel rêve s'agit-il?</span>
             <div className="image">
                 
                 <div className="icons">
@@ -66,8 +78,6 @@ const Home: React.FC = () => {
         </div>
     </div>
 </section>
-
-
 
     </div>
   )
