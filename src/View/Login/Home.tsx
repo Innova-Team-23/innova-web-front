@@ -4,20 +4,7 @@ import '../../Assets/style/Home.css';
 import { type } from 'os';
 
 import logo from '../../Assets/img/reve.jpg';
-
-const Home = () => {
-    return <h1>Accueil</h1>;
-  };
   
-  const Apropos = () => {
-    return <h1>À propos</h1>;
-  };
-  
-  const Historique = () => {
-    return <h1>Historique</h1>;
-  };
-  
-
 
 const Header: React.FC = () => {
 
@@ -34,10 +21,10 @@ const Header: React.FC = () => {
     </section>
 
     <section className="about" id="about">
-        <h1 className="heading">about us</h1>
+        <h1 className="heading">A propos</h1>
         <div className="row">
             <div className="video-container">
-                <h3>Best video</h3>
+                <h3>Meilleur video</h3>
             </div>
             <div className="content">
                 <h3>Pourquoi nous choisir?</h3>
@@ -54,12 +41,7 @@ const Header: React.FC = () => {
         <div className="box">
             <span className="discount">De quel rêve s'agit-il?</span>
             <div className="image">
-                
-                <div className="icons">
-                    <Link to="/" className="fas fa-heart"></Link>
-                    <Link to="/" className="fas fa-heart"></Link>
-                    <Link to="/" className="fas fa-heart"></Link>
-                </div>
+
             </div>
             <div className="content">
                 <h3>3D Innovation</h3>
@@ -70,11 +52,6 @@ const Header: React.FC = () => {
             <span className="discount">De quel rêve s'agit-il?</span>
             <div className="image">
                 
-                <div className="icons">
-                    <Link to="/" className="fas fa-heart"></Link>
-                    <Link to="/" className="fas fa-share"></Link>
-                    <Link to="/" className="fas fa-heart"></Link>
-                </div>
             </div>
             <div className="content">
                 <h3>3D Innovation</h3>
