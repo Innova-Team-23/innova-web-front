@@ -5,6 +5,7 @@ import Sidebar from './ViewBack/Layout/Sidebar';
 
 import Navbar from './View/Navbar/Navbar';
 import Footer from './View/Footer/Footer';
+import Contact from './View/Contact/Contact';
 
 function App() {
   return (
