@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Navbar from './View/Navbar/Navbar';
-import Home from './View/Login/Home';
+// import Homeback from './ViewBack/HomeBack/Homeback';
+import Sidebar from './ViewBack/Layout/Sidebar';
+
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Home/>
+      <Sidebar/>
     </div>
   );
 }

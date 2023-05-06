@@ -1,25 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../Assets/style/Navbar.css";
-import { AbortedDeferredError } from 'react-router-dom';
 
 import logo from "../../Assets/img/Logo.png";
 
-type Theme = "light" | "dark";
-
 const Navbar: React.FC = () => {
     
-    const [theme, setTheme] = useState<Theme>("light");
-
-    const toggleTheme = (): void => {
-      setTheme(theme === "light" ? "dark" : "light");
-    };
-  
-    const style = {
-      backgroundColor: theme === "light" ? "#fff" : "#000",
-      color: theme === "light" ? "#000" : "#fff",
-    };
-  
     function handleClickOnSwitch() {
       const switchElem = document.querySelector(".switch");
       if (switchElem) {
@@ -28,7 +14,7 @@ const Navbar: React.FC = () => {
     }
   
   return (
-    <div style={style}>
+    <div>
       <nav className="navbar">
         <img src={logo} alt="Logo" className="logo_img" />
         <ul className="navbar__list">
@@ -36,7 +22,7 @@ const Navbar: React.FC = () => {
             <Link to="/">Accueil</Link>
           </li>
           <li className="navbar__item">
-            <Link to="/about">Historique</Link>
+            <Link to="/historique">Historique</Link>
           </li>
           <li className="navbar__item">
             <Link to="/contact">Contact</Link>
@@ -49,7 +35,7 @@ const Navbar: React.FC = () => {
               />
             </svg>
             <label className="toggle-switch">
-              <input type="checkbox" onClick={toggleTheme}/>
+              <input type="checkbox"/>
 
               <span className="switch" onClick={handleClickOnSwitch} />
             </label>

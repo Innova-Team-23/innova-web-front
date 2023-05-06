@@ -13,7 +13,12 @@
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
   --box-shadow-img: inset 9px 10px 10px 0.5px rgba(0, 0, 10, 0.21);
-
+  --bg-color: #00dee8;
+  --text-color: #333;
+  --second-color: #007c82;
+  --color: #d4d4d4;
+  --three-color: #00adb5;
+  --background-color: #eeeeee;
   /* ======== Font and typography ======== */
   --body-font: "Poppins", sans-serif;
 
