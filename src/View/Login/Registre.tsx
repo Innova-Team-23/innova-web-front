@@ -20,29 +20,35 @@ export default function Registre() {
           </div>
         </div>
         <div className="inputBoxs">
-        <div className="inputBox">
-          <input type="date" required={true} />
-          <span>Date naissance</span>
-          <i></i>
-        </div>
-        <div className="inputBox">
-          <input type="text" required={true}/>
-          <span>E-mail</span>
-          <i></i>
-        </div>
+          <div className="inputBox">
+            <input type="date" required={true} />
+            <span>Date naissance</span>
+            <i></i>
+          </div>
+          <div className="inputBox">
+            <input type="text" required={true} />
+            <span>E-mail</span>
+            <i></i>
+          </div>
         </div>
         <div className="inputBoxs">
-        <div className="inputBox">
-          <input type="password" required={true} />
-          <span>Mot de passe</span>
-          <i></i>
+          <div className="inputBox">
+            <input type="password" required={true} />
+            <span>Mot de passe</span>
+            <i></i>
+          </div>
+          <div className="inputBox">
+            <input type="password" required={true} />
+            <span>Confirmer mot de passe</span>
+            <i></i>
+          </div>
         </div>
-        <div className="inputBox">
-
-          <input type="password" required={true} />
-          <span>Confirmer mot de passe</span>
+        <div className="inputBoxImage">
+          <input type="file" required={true} className="inputImage"/>
+          <div>
+          <span className="imagespan">Confirmer mot de passe</span>
+          </div>
           <i></i>
-        </div>
         </div>
         <div className="links">
           <input type="submit" value="Creér" />
