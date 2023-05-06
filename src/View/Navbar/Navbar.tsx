@@ -36,10 +36,10 @@ const Navbar: React.FC = () => {
             <Link to="/">Accueil</Link>
           </li>
           <li className="navbar__item">
-            <Link to="/about">Historique</Link>
+            <Link to="/apropos">A propos</Link>
           </li>
           <li className="navbar__item">
-            <Link to="/contact">Contact</Link>
+            <Link to="/historique">Historique</Link>
           </li>
           <li className="nav__item switch-icon">
             <svg viewBox="0 0 24 24" width={24} height={24}>
