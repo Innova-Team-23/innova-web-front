@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../Assets/style/Navbar.css";
+import { AbortedDeferredError } from 'react-router-dom';
+
 import logo from "../../Assets/img/Logo.png";
 
 type Theme = "light" | "dark";
@@ -31,10 +33,10 @@ const Navbar: React.FC = () => {
         <img src={logo} alt="Logo" className="logo_img" />
         <ul className="navbar__list">
           <li className="navbar__item">
-            <Link to="/">Home</Link>
+            <Link to="/">Accueil</Link>
           </li>
           <li className="navbar__item">
-            <Link to="/about">About</Link>
+            <Link to="/about">Historique</Link>
           </li>
           <li className="navbar__item">
             <Link to="/contact">Contact</Link>
