@@ -22,11 +22,12 @@ section{
 
 .heading{
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.2rem;
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
     background: var(--three-color);
+    border-radius: 5vw ;
 }
 
 .heading span{
@@ -129,21 +130,21 @@ section{
 
 .card .box-container .box{
     flex: 1 1 30rem;
-    box-shadow: 1.5rem 1.5rem rgba(99, 89, 89, 0.1);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     border-radius: .5rem;
-    border: 1.1rem solid rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
     position: relative;
 }
 
 .card .box-container .box .discount{
-   position: absolute;
-   top:1rem; left: 1rem;
-   padding: 5rem 1rem;
-   font-size: 2rem;
-   color: var(--orange);
-   background: rgba(255, 51, 153,.05);
-   z-index: 1;
-   border-radius: .5rem;
+    position: absolute;
+    top:1rem; left: 1rem;
+    padding: 5rem 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    background: rgba(255, 51, 153,.05);
+    z-index: 1;
+    border-radius: .5rem;
 }
 
 .card .box-container .box .image{
