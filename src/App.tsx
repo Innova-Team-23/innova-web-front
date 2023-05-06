@@ -10,9 +10,7 @@ import Contact from './View/Contact/Contact';
 function App() {
   return (
     <div>
-      <Sidebar/>
-      <Navbar/>
-      <Footer/>
+     <Home/>
     </div>
   );
 }
