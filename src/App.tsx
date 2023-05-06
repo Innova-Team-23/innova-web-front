@@ -6,6 +6,7 @@ import Sidebar from './ViewBack/Layout/Sidebar';
 import Navbar from './View/Navbar/Navbar';
 import Footer from './View/Footer/Footer';
 import Contact from './View/Contact/Contact';
+import Container from './View/Historique/Historique';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Sidebar/>
       <Navbar/>
       <Footer/>
+      <Container/>
     </div>
   );
 }

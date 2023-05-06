@@ -2,14 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import '../../Assets/style/Home.css';
 
-  
-  const Apropos = () => {
-    return <h1>À propos</h1>;
-  };
-  
-  const Historique = () => {
-    return <h1>Historique</h1>;
-  };
+
   
 
 const Home: React.FC = () => {
