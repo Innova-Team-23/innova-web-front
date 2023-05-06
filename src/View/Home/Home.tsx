@@ -1,15 +1,21 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import '../../Assets/style/Home.css';
-import { type } from 'os';
 
-import logo from '../../Assets/img/reve.jpg';
+  
+  const Apropos = () => {
+    return <h1>À propos</h1>;
+  };
+  
+  const Historique = () => {
+    return <h1>Historique</h1>;
+  };
   
 
-const Header: React.FC = () => {
+const Home: React.FC = () => {
 
   return(
-    <div>
+    <div className='homes'>
     <section className="home" id="home">
         <div className="content">
             <h3>Bonjour, Bienvenue</h3>
@@ -65,4 +71,4 @@ const Header: React.FC = () => {
 
 }
 
-export default Header;
+export default Home;

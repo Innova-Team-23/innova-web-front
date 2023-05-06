@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
+// import Homeback from './ViewBack/HomeBack/Homeback';
+import Sidebar from './ViewBack/Layout/Sidebar';
+
 import Navbar from './View/Navbar/Navbar';
-import Home from './View/Login/Home';
 import Footer from './View/Footer/Footer';
 import Contact from './View/Contact/Contact';
 
 function App() {
   return (
     <div>
+      <Sidebar/>
       <Navbar/>
-      <Home/>
-      <Contact/>
       <Footer/>
     </div>
   );

@@ -5,6 +5,7 @@
   margin-left: 1.5rem;
 }
 .navbar {
+    background-color: var(--container-color);
     position: fixed;
     top: 0; left: 0; right: 0;
     padding: 2rem 9%;
@@ -25,7 +26,8 @@
 }
 
 .navbar__item {
-  margin-right: 3rem;
+  margin-right: 5rem;
+  font-size: 15px;
 }
 
 .navbar__item:last-child {
