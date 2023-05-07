@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Navbar/test';
+import Navbar from '../Layout/Navbar';
 import '../../Assets/style/Historique.css';
 
 
@@ -8,7 +8,7 @@ import myImage from '../../Assets/img/reve.jpg';
 const Historique: React.FC = () => {
   return (
     <div className="container">
-     <div className='card'>
+     <div className='cards'>
       <h3>Historiques des rêves</h3>
      </div>
     </div>
