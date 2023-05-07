@@ -12,18 +12,7 @@ const Navbar: React.FC = () => {
       switchElem.classList.toggle("clicked");
     }
   }
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleOpenModal = () => setIsOpen(true);
-  const handleCloseModal = () => setIsOpen(false);
-
-  const modalContenu = (
-    <>
-      <h1>Mon contenu de modal</h1>
-      <button onClick={handleCloseModal}>Fermer</button>
-    </>
-  );
-
+  
   return (
     <>
       <div>
@@ -59,14 +48,7 @@ const Navbar: React.FC = () => {
               </svg>
             </li>
           </ul>
-          <div>
-            <button onClick={handleOpenModal}>Ouvrir le modal</button>
-            <Modal
-              isOpen={isOpen}
-              onClose={handleCloseModal}
-              children={modalContenu}
-            />
-          </div>
+          
         </nav>
       </div>
     </>
