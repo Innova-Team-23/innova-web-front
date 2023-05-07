@@ -12,8 +12,8 @@ interface FooterProps {
         <footer>
         <div>
           <h3>Informations de contact</h3>
-          <p><FaEnvelope /> example@example.com</p>
-          <p><FaPhone /> 123-456-7890</p>
+          <p><FaEnvelope />user@example.com</p>
+          <p><FaPhone />+2610020131</p>
         </div>
         <div>
           <h3>Liens utiles</h3>
@@ -24,7 +24,7 @@ interface FooterProps {
           </ul>
         </div>
         <div>
-          <p>© 2023 Votre entreprise. Tous droits réservés.</p>
+          <p>© 2023 Notre Institut Indépendance . Tous droits réservés.</p>
         </div>
       </footer>
     );

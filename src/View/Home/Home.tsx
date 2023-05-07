@@ -35,26 +35,18 @@ const Home: React.FC = () => {
     <h1 className="heading">Poster Vos rêves</h1>
     <div className="box-container">
         <div className="box">
-            <span className="discount">De quel rêve s'agit-il?</span>
-            <div className="image">
-
-            </div>
             <div className="content">
-                <h3>3D Innovation</h3>
+            <Link to="/Historique"><h3>De votre cauchemar...</h3></Link>      
             </div>
         </div>
-
         <div className="box">
-            <span className="discount">De quel rêve s'agit-il?</span>
-            <div className="image">
-                
-            </div>
             <div className="content">
-                <h3>3D Innovation</h3>
+                <Link to="/Historique"><h3>De votre peur..</h3></Link>
             </div>
         </div>
     </div>
 </section>
+
     </div>
   )
 
