@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Assets/style/Home.css";
+import myVideo from "../../Assets/style/ba.mp4";
 import telma from "../../Assets/img/Telma.jpg";
 import ingonesya from "../../Assets/img/ingenosya.png";
 import ibonia from "../../Assets/img/Ibonia.png";
@@ -10,21 +11,22 @@ const Home: React.FC = () => {
   return (
     <div className="homes">
       <section className="home" id="home">
-        <div className="background hidden">
-          <div className="home__img"></div>
-        </div>
         <div className="content">
           <h3> Bienvenue chez Onirix </h3>
-          <span>Dans notre site de préduction de rêve..</span>
+          <span>Dans notre site de prédiction de rêve..</span>
           <p>
             Le rêve est une « disposition de l'esprit généralement nocturne,
             survenant au cours du sommeil, et qui procure à l'individu éveillé
             des souvenirs nommés eux aussi rêves ».
           </p>
-          <Link to="/" className="btn">
+          <Link to="/login" className="btn">
             Commencer
           </Link>
         </div>
+        {/* Add the video tag here */}
+        <video className="video-container" autoPlay loop muted>
+          <source src={myVideo} type="video/mp4" />
+        </video>
       </section>
 
       <section className="about" id="about">

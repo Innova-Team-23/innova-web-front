@@ -7,6 +7,7 @@ import Registre from './View/Login/Registre';
 import Profil from './ViewBack/Profil/Profil';
 import Historique from './View/Historique/Historique';
 import Apropos from './View/Apropos/Apropos';
+import ChatBot from './View/Bot/ChatBot';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './View/Layout/Navbar';
 import Footer from './View/Footer/Footer';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/historique" element={<Historique />} />
         <Route path="/apropos" element={<Apropos />} />
       </Routes>
+      <ChatBot />
       <Footer/>
     </BrowserRouter>
     </div>

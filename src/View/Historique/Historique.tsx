@@ -3,7 +3,6 @@ import Navbar from '../Layout/Navbar';
 import '../../Assets/style/Historique.css';
 
 
-import myImage from '../../Assets/img/reve.jpg';
 
 const Historique: React.FC = () => {
   return (
