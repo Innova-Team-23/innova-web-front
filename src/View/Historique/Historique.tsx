@@ -1,9 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar/test';
 import '../../Assets/style/Historique.css';
 
 
-import myImage from '../../Assets/img/reve.jpg';
 
 const Historique: React.FC = () => {
   return (
