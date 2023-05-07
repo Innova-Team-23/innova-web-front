@@ -4,6 +4,7 @@ import "../../Assets/style/Nav.css";
 
 import logo from "../../Assets/img/Logo.png";
 
+
 const Navbar: React.FC = () => {
     
     function handleClickOnSwitch() {
