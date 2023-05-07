@@ -6,13 +6,18 @@ const Home: React.FC = () => {
 
   return(
     <div className='homes'>
+        
+        
     <section className="home" id="home">
+    <div className="home__img">
+        </div>
         <div className="content">
             <h3>Bonjour, Bienvenue</h3>
             <span>Dans notre site de préduction de rêve..</span>
             <p>Le rêve est une « disposition de l'esprit généralement nocturne, survenant au cours du sommeil, et 
               qui procure à l'individu éveillé des souvenirs nommés eux aussi rêves ».</p>
             <Link to="/" className="btn">Explorer maintenant</Link>
+            
         </div>
     </section>
 
@@ -35,26 +40,18 @@ const Home: React.FC = () => {
     <h1 className="heading">Poster Vos rêves</h1>
     <div className="box-container">
         <div className="box">
-            <span className="discount">De quel rêve s'agit-il?</span>
-            <div className="image">
-
-            </div>
             <div className="content">
-                <h3>3D Innovation</h3>
+            <Link to="/Historique"><h3>De votre cauchemar...</h3></Link>      
             </div>
         </div>
-
         <div className="box">
-            <span className="discount">De quel rêve s'agit-il?</span>
-            <div className="image">
-                
-            </div>
             <div className="content">
-                <h3>3D Innovation</h3>
+                <Link to="/Historique"><h3>De votre peur..</h3></Link>
             </div>
         </div>
     </div>
 </section>
+
     </div>
   )
 

@@ -10,6 +10,7 @@ import Apropos from './View/Apropos/Apropos';
 import ChatBot from './View/Bot/ChatBot';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './View/Layout/Navbar';
+import Footer from './View/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/apropos" element={<Apropos />} />
       </Routes>
       <ChatBot />
+      <Footer/>
     </BrowserRouter>
     </div>
   );
