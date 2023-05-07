@@ -115,14 +115,14 @@ section{
     color: #333;
 }
 
-.home .content span{
+.home .content {
     font-size: 3.5rem;
     color:var(--second-color);
     padding: 1rem 0;
     line-height: 1.5;
 }
 
-.home .content span{
+.home .content{
     font-size: 1.5rem;
     color:#1E003D;
     padding: 1rem 0;
