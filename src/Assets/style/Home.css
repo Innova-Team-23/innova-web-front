@@ -43,16 +43,13 @@ section{
 .heading{
     text-align: center;
     font-size: 2.2rem;
-    color: #333;
+    color: var(--container-color);
     padding: 1rem;
     margin: 2rem 0;
-    background: var(--three-color);
-    border-radius: 5vw ;
+    background: var(--second-color);
+    opacity: 0.5;
 }
 
-.heading span{
-    color: var(--three-color);
-}
 
 .btn{
     display: inline-block;
@@ -196,8 +193,8 @@ section{
 }
 
 .about .row .content p{
+    color: var(--color-text);
     font-size: 1.5rem;
-    color: #999;
     padding: 5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
@@ -282,7 +279,9 @@ section{
     color: #333;
 }
 
-
+.icons{
+    background-color: var(--second-color);
+}
 
 @media (max-width:991px) {
 
@@ -363,4 +362,37 @@ section{
   height: auto;
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
+}
+.icons-container{
+    background: var(--icon);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background: var(--background);
+    border: .1rem solid var(--header__link);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons img{
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+    color: var(--heading);
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    color: var(--icon__span);
+    font-size: 1.3rem;
 }

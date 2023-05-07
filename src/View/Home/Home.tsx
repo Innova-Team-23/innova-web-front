@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../Assets/style/Home.css";
 import myVideo from "../../Assets/style/ba.mp4";
+import telma from "../../Assets/img/Telma.jpg";
+import ingonesya from "../../Assets/img/ingenosya.png";
+import ibonia from "../../Assets/img/Ibonia.png";
+import pulse from "../../Assets/img/Pulse.png";
 
 const Home: React.FC = () => {
   return (
@@ -52,7 +56,39 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      <section className="icons-container">
+        <div className="icons">
+          <img src={pulse} alt="Pulse" />
+          <div className="info">
+            <h3>Pulse</h3>
+            <span>Antananarivo</span>
+          </div>
+        </div>
 
+        <div className="icons">
+          <img src={ingonesya} alt="Ingonesya" />
+          <div className="info">
+            <h3>Ingonesya</h3>
+            <span>Antananarivo</span>
+          </div>
+        </div>
+
+        <div className="icons">
+        <img src={telma} alt="Telma"/>
+          <div className="info">
+            <h3>Telma</h3>
+            <span>Madagscar</span>
+          </div>
+        </div>
+
+        <div className="icons">
+          <img src={ibonia} alt="Ibonia" />
+          <div className="info">
+            <h3>Ibonia</h3>
+            <span>Antananarivo</span>
+          </div>
+        </div>
+      </section>
       <section className="card" id="card">
         <h1 className="heading">Poster Vos rêves</h1>
         <div className="box-container">
