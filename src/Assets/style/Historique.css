@@ -1,0 +1,11 @@
+.container {
+    position: fixed;
+    display: flex;
+    background:url(../img/card.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250vh;
+    height: 100vh;
+   
+  }
+
