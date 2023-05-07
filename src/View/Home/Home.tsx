@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect, FC } from "react";
 import { Link } from "react-router-dom";
 import "../../Assets/style/Home.css";
 import myVideo from "../../Assets/style/ba.mp4";
@@ -6,13 +6,72 @@ import telma from "../../Assets/img/Telma.jpg";
 import ingonesya from "../../Assets/img/ingenosya.png";
 import ibonia from "../../Assets/img/Ibonia.png";
 import pulse from "../../Assets/img/Pulse.png";
+import image from "../../Assets/img/image.jpg";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 const Home: React.FC = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = [" Bienvenue chez Onirix"];
+  const period = 1000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+
   return (
     <div className="homes">
       <section className="home" id="home">
         <div className="content">
-          <h3> Bienvenue chez Onirix </h3>
+        <TrackVisibility>
+        {({ isVisible }) => (
+          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+           
+            <h2>
+              {``} <br></br>{" "}
+              <span data-period="1000" data-rotate='[ "Web Developer"]'>
+                <span className="bienvenu">{text}</span>
+              </span>
+            </h2>
+          </div>
+        )}
+      </TrackVisibility>
           <span>Dans notre site de prédiction de rêve..</span>
           <p>
             Le rêve est une « disposition de l'esprit généralement nocturne,
@@ -23,7 +82,7 @@ const Home: React.FC = () => {
             Commencer
           </Link>
         </div>
-        {/* Add the video tag here */}
+  
         <video className="video-container" autoPlay loop muted>
           <source src={myVideo} type="video/mp4" />
         </video>
@@ -33,7 +92,7 @@ const Home: React.FC = () => {
         <h1 className="heading">A propos</h1>
         <div className="row">
           <div className="video-container">
-            <h3>Meilleur video</h3>
+            <img src={image} alt="image"/>
           </div>
           <div className="content">
             <h3>Pourquoi nous choisir?</h3>

@@ -49,7 +49,10 @@ section{
     background: var(--second-color);
     opacity: 0.5;
 }
-
+.bienvenu{
+    font-size: 4.5rem;
+    color: var(--container-color)
+}
 
 .btn{
     display: inline-block;
