@@ -36,7 +36,7 @@
   }
   
   .navbar__item a {
-    color: var(--title-color);
+    color: var(--second-color);
     text-decoration: none;
   }
    
@@ -59,7 +59,7 @@
   .toggle-switch .switch {
     position: absolute;
     cursor: pointer;
-    background-color: var(--title-color);
+    background-color: var(--second-color);
     border-radius: 25px;
     top: 0;
     right: 0;
