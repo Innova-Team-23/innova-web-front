@@ -11,6 +11,7 @@ import ChatBot from './View/Bot/ChatBot';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './View/Layout/Navbar';
 import Footer from './View/Footer/Footer';
+import Client from './View/Prediction/Client';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/profil" element={<Profil />} />
         <Route path="/historique" element={<Historique />} />
         <Route path="/apropos" element={<Apropos />} />
+        <Route path="/client" element={<Client />} />
       </Routes>
       <ChatBot />
       <Footer/>

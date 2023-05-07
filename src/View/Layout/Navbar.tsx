@@ -27,6 +27,9 @@ const Navbar: React.FC = () => {
           <li className="navbar__item">
             <Link to="/historique">Historique</Link>
           </li>
+          <li className="navbar__item">
+            <Link to="/client">Client</Link>
+          </li>
           <li className="nav__item switch-icon">
             <svg viewBox="0 0 24 24" width={24} height={24}>
               <path
