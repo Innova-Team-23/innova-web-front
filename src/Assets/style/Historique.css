@@ -1,11 +1,20 @@
 .container {
-    position: fixed;
-    display: flex;
-    background:url(../img/card.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 250vh;
-    height: 100vh;
-   
-  }
+  position: relative;
+  height: 600px;
+  background-image: url('../img/card.jpg');
+  background-size: cover;
+  background-position: top;
+}
 
+.cards {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
